@@ -1,0 +1,70 @@
+<div *ngIf="env">
+		<h3>Environment Details</h3>
+		<div class="example-container">
+			<mat-form-field> 
+				<input matInput [ngModel]="env.id"
+					placeholder="ID" 
+					readonly> 
+			</mat-form-field>
+			<!---
+			<md-input-container>
+				<input type="text" mdInput [mDatePicker]="birddate">
+				<button MdSuffix [mdDatePickerToggle]="birddate"></button>
+			</md-input-container>
+			<md-datepikker #birddate></md-datepikker>
+			-->
+			<mat-form-field>
+					<input matInput [matDatepicker]="myDatepicker">
+					<mat-datepicker-toggle matSuffix [for]="myDatepicker"></mat-datepicker-toggle>
+					<mat-datepicker #myDatepicker></mat-datepicker>
+			</mat-form-field>
+			<!---
+			<mat-form-field>
+				 <input (click)="OnEditString(env.version)"
+				 	matInput="text"
+					[ngModel]="env.version" 
+					placeholder="version">
+			 </mat-form-field>
+	        -->
+			<mat-form-field> 
+				<input (click)="OnEditString(env.status)"
+					matInput="text"
+					[ngModel]="env.status" 
+					placeholder="status"> 
+			</mat-form-field>
+	
+			<mat-form-field> 
+				<input (click)="onDatePicker(env['installed-at'])"
+				matInput="datetime-local"
+				[ngModel]="env['installed-at']" 
+				placeholder="installed">
+			</mat-form-field>
+	
+			<mat-form-field>
+					<input (click)="onDatePicker(env['stopped-at'])"
+					matInput="datetime-local"
+					[ngModel]="env['stopped-at']" 
+					placeholder="stopped">
+			</mat-form-field>
+
+			<button 
+				(click)="onCancelEnvironment(env)">
+				Cancel
+			</button>
+			<button 
+				(click)="onOkEnvironment(env)">
+				OK
+			</button>
+			
+	        <!--
+			<mat-form-field> <textarea rows="15" cols="20" input
+				matInput [ngModel]="base64_decode(env.dc)"
+				placeholder="docker container" readonly> 
+			 </textarea> </mat-form-field>
+			 -->
+
+
+
+	
+		</div>
+	</div>

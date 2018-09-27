@@ -1,0 +1,20 @@
+{
+    "environments": [
+        {
+            "id": "acc",
+            "version": "--",
+            "dc": "--",
+            "installed-at": "--",
+            "stopped-at": "--",
+            "status": "--"
+        },        
+        {
+            "id": "prod",
+            "version": "--",
+            "dc": "--",
+            "installed-at": "--",
+            "stopped-at": "--",
+            "status": "--"
+        }
+    ]
+}

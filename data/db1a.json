@@ -1,0 +1,94 @@
+{
+  "environments": [
+    {
+      "index": 4,
+      "id": "acc",
+      "version": "04",
+      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
+      "installed-at": "01-jan-2018",
+      "stopped-at": "01-feb-2018",
+      "status": "do_install"
+    },
+    {
+      "index": 2,
+      "id": "prod",
+      "version": "02",
+      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
+      "installed-at": "01-mar-2018",
+      "stopped-at": "01-apr-2018",
+      "status": "do_install"
+    },
+    {
+      "index": 3,
+      "id": "test",
+      "version": "06",
+      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
+      "installed-at": "01-jun-2018",
+      "stopped-at": "01-jul-2018",
+      "status": "new"
+    },
+    {
+      "index": 4,
+      "id": "acc",
+      "version": "04",
+      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
+      "installed-at": "01-jan-2018",
+      "stopped-at": "01-feb-2018",
+      "status": "installed"
+    },
+    {
+      "index": 5,
+      "id": "prod",
+      "version": "05",
+      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
+      "installed-at": "01-mar-2018",
+      "stopped-at": "01-apr-2018",
+      "status": "new"
+    },
+    {
+      "index": 6,
+      "id": "test",
+      "version": "06",
+      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
+      "installed-at": "01-jun-2018",
+      "stopped-at": "01-jul-2018",
+      "status": "installed"
+    },
+    {
+      "index": 7,
+      "id": "test",
+      "version": "07",
+      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
+      "installed-at": "01-jun-2018",
+      "stopped-at": "01-jul-2018",
+      "status": "install"
+    },
+    {
+      "index": 8,
+      "id": "acc",
+      "version": "08",
+      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
+      "installed-at": "01-jan-2018",
+      "stopped-at": "01-feb-2018",
+      "status": "do_install"
+    },
+    {
+      "index": 9,
+      "id": "prod",
+      "version": "09",
+      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
+      "installed-at": "01-mar-2018",
+      "stopped-at": "01-apr-2018",
+      "status": "installed"
+    },
+    {
+      "index": 10,
+      "id": "test",
+      "version": "10",
+      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
+      "installed-at": "01-jun-2018",
+      "stopped-at": "01-jul-2018",
+      "status": "do_install"
+    }
+  ]
+}
