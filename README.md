@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+# Building a docker angular container with nginx
+run ng build --prod
+copy dist/my-env directory to build/dist
+cd build directory
+
+building the docker image : docker build -t <image_name:tag> .
+running the docker image: ex. docker run -e JSON_SERVER_URL="http://localhost:3000/environments" -p 9090:80 <image_name:tag>
+
+# to run your local json server visit https://github.com/typicode/json-server for details
+# see data direcory for ssample json files
