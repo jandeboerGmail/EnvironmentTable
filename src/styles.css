@@ -1,9 +1,22 @@
+
 /*
 @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 */
-@import
-	"../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
+/*
+@import "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
+*/
+
+@import "../node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css";
 
 body {
 	font-family: sans-serif;
+	background-color: gray;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: green;
 }

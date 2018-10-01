@@ -2,69 +2,74 @@
 		<h3>Environment Details</h3>
 		<div class="example-container">
 			<mat-form-field> 
-				<input matInput [ngModel]="env.id"
+				<input 
+					matInput 
+					[ngModel]="env.id"
 					placeholder="ID" 
 					readonly> 
 			</mat-form-field>
-			<!---
-			<md-input-container>
-				<input type="text" mdInput [mDatePicker]="birddate">
-				<button MdSuffix [mdDatePickerToggle]="birddate"></button>
-			</md-input-container>
-			<md-datepikker #birddate></md-datepikker>
-			-->
-			<mat-form-field>
-					<input matInput [matDatepicker]="myDatepicker">
-					<mat-datepicker-toggle matSuffix [for]="myDatepicker"></mat-datepicker-toggle>
-					<mat-datepicker #myDatepicker></mat-datepicker>
-			</mat-form-field>
-			<!---
-			<mat-form-field>
-				 <input (click)="OnEditString(env.version)"
-				 	matInput="text"
+			
+			<mat-form-field class="example-full-width">
+				<input 
+					matInput="number" 
+					placeholder="version"
 					[ngModel]="env.version" 
-					placeholder="version">
-			 </mat-form-field>
-	        -->
-			<mat-form-field> 
-				<input (click)="OnEditString(env.status)"
-					matInput="text"
-					[ngModel]="env.status" 
-					placeholder="status"> 
-			</mat-form-field>
-	
-			<mat-form-field> 
-				<input (click)="onDatePicker(env['installed-at'])"
+					required> 
+				<!--
+				<mat-error *ngIf="version.errors.required">
+				-->
+				<mat-error>
+						Version is <strong>required</strong>
+				</mat-error>
+			
+		 </mat-form-field>
+		
+		  	<!--
+				matInput [matDatepicker]="myDatepicker1"
+				-->
+				
+		<mat-form-field>
+			<input    
 				matInput="datetime-local"
 				[ngModel]="env['installed-at']" 
-				placeholder="installed">
+				placeholder="Installed"
+				required>
+				<mat-datepicker-toggle matSuffix [for]="myDatepicker1"></mat-datepicker-toggle>
+				<mat-datepicker #myDatepicker1></mat-datepicker>	
 			</mat-form-field>
-	
+			
 			<mat-form-field>
-					<input (click)="onDatePicker(env['stopped-at'])"
+				<input 
 					matInput="datetime-local"
 					[ngModel]="env['stopped-at']" 
-					placeholder="stopped">
+					placeholder="Stopped"
+					required>
+				<mat-datepicker-toggle matSuffix [for]="myDatepicker2"></mat-datepicker-toggle>
+				<mat-datepicker #myDatepicker2></mat-datepicker>	
+			</mat-form-field>
+		
+			<mat-form-field class="example-full-width">
+					<input 
+					matInput="text" 
+					placeholder="Status" 
+					[ngModel]="env.status"
+					required>
 			</mat-form-field>
 
-			<button 
-				(click)="onCancelEnvironment(env)">
-				Cancel
-			</button>
-			<button 
-				(click)="onOkEnvironment(env)">
-				OK
-			</button>
+			<mat-form-field class="example-full-width">
+				<textarea 
+					rows="8" cols="20"			
+					readonly
+					matInput [ngModel]="base64_decode(env.dc)"
+					placeholder="Docker Container"
+					required> 
+				</textarea> 
+			</mat-form-field>
 			
-	        <!--
-			<mat-form-field> <textarea rows="15" cols="20" input
-				matInput [ngModel]="base64_decode(env.dc)"
-				placeholder="docker container" readonly> 
-			 </textarea> </mat-form-field>
-			 -->
-
-
-
-	
+			<button 
+				mat-raised-button
+				color='primary'	
+				(click)="onApplyEnvironment(env)">Apply Changes
+			</button>
 		</div>
 	</div>

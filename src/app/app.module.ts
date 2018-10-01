@@ -9,6 +9,7 @@ import { MatSortModule, MatPaginatorModule, MatDatepicker, MatDatepickerModule, 
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDialogModule } from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button'
 
 import { AppComponent } from './app.component';
 import { EnvironmentsComponent } from './environments/environments.component';
@@ -33,7 +34,8 @@ import { EnvironmentDetailComponent } from './environment-detail/environment-det
     MatFormFieldModule,
     MatDialogModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -23,16 +23,26 @@
 	*matCellDef="let env">
 
 <button *ngIf="env.status !== 'installed'"
-     class = "green_button"
-	(click)="onButtonClick(env, 'installed')">install</button>
+	mat-raised-button
+	color = "primary" 
+	(click)="onButtonClick(env, 'installed')">Install
+</button>
 
 <button *ngIf="env.status === 'installed'"
-    class = "green_button"
-	(click)="onButtonClick(env, 'stopped')">stop</button>
+	mat-raised-button
+	color = "primary" 
+	(click)="onButtonClick(env, 'stopped')">Stop
+</button>
 
 <button *ngIf="env.status === 'stopped' || env.status === 'new' "
-    class = "red_button"
-	(click)="onDeleteEnvironment(env)">delete</button>
+	mat-raised-button
+	color='warn'	
+	(click)="onDeleteEnvironment(env)">Delete
+</button>
+
+	<!--
+	class = "red_button"
+	-->
 
 </mat-cell> </ng-container> <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
 <mat-row *matRowDef="let row; columns: displayedColumns; let env;"

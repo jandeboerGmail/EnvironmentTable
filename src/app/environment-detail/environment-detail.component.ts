@@ -2,6 +2,7 @@ import { Component, OnInit, Input , Inject} from '@angular/core';
 import { MatDialogRef , MAT_DIALOG_DATA} from '@angular/material';
 
 import { Environment } from '../environment';
+import { EnvironmentService } from '../environment.service';
 
 @Component({
   selector: 'app-environment-detail',
@@ -12,7 +13,7 @@ export class EnvironmentDetailComponent implements OnInit {
   
   env: Environment;
 
-  constructor(public dialogRef: MatDialogRef<EnvironmentDetailComponent>,@Inject(MAT_DIALOG_DATA) public data:any) { }
+  constructor(private environmentService: EnvironmentService,public dialogRef: MatDialogRef<EnvironmentDetailComponent>,@Inject(MAT_DIALOG_DATA) public data:any) { }
 
   ngOnInit() {
     this.env = this.data;
@@ -28,15 +29,11 @@ export class EnvironmentDetailComponent implements OnInit {
     }
   }
 
-  onOkEnvironment(env : Environment) {
-    console.log("onOkEnvironment");
-  }
-  onCancelEnvironment(env : Environment) {
-    console.log("onCancelEnvironment");
-  }
-
-  onDatePicker(date : string) {
-    console.log("onDatePicker");
+  onApplyEnvironment(env : Environment) {
+    console.log("onOnApplyEnvironment:");
+    console.log(env.version)
+    this.dialogRef.close;
+    this.environmentService.updateEnvironment(env).subscribe();
   }
 
   OnEditString(s : string) {

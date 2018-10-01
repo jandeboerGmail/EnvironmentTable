@@ -48,12 +48,13 @@ export class EnvironmentsComponent implements OnInit {
 
   onSelect(env: Environment) {
     this.currentEnv = env;
-    const dialogRef = this.dialog.open(EnvironmentDetailComponent, {data: this.currentEnv} );
+    const dialogRef = this.dialog.open(EnvironmentDetailComponent, 
+      {data: this.currentEnv, height :'700px', width : '300px' } );
     dialogRef.afterClosed().subscribe(result => {
       console.log('dialog was closed');
     });
   }
-  
+
   applyFilter(filterValue: string) {
     this.filter = filterValue.trim().toLowerCase();
     this.dataSource.filter = filterValue.trim().toLowerCase();
