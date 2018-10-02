@@ -24,8 +24,8 @@ private baseUrl = environment.baseUrl;  // URL to web api
   
     /** Log a HeroService message with the MessageService */
   private log(message: string) {
-    console.log('Service: ' + message);
-    console.log('baseURL -->' + this.baseUrl);
+    //console.log('Service: ' + message);
+    //console.log('baseURL -->' + this.baseUrl);
   }
 
     /**
@@ -61,7 +61,7 @@ private baseUrl = environment.baseUrl;  // URL to web api
   deleteEnvironment (env: Environment | number): Observable<Environment> {
     const id = typeof env === 'number' ? env : env.id;
     const url = `${this.baseUrl}/${id}`;
-    console.log('Delete URL :' + url);
+    //console.log('Delete URL :' + url);
 
     return this.http.delete<Environment>(url, httpOptions).pipe(
       tap(_ => this.log(`deleted env id=${id}`)),
@@ -70,7 +70,7 @@ private baseUrl = environment.baseUrl;  // URL to web api
   }
 
   getEnvironments(): Observable<Environment[]> {
-    console.log('baseURL ->' + this.baseUrl);
+    //console.log('baseURL ->' + this.baseUrl);
     return this.http.get<Environment[]>(this.baseUrl)
       .pipe(
         tap(envs => this.log('fetched environments')),
@@ -102,7 +102,7 @@ private baseUrl = environment.baseUrl;  // URL to web api
   /** PUT: update the env on the server */
   updateEnvironment (env: Environment): Observable<any> {
     const url = `${this.baseUrl}/${env.id}`;
-    console.log('Delete URL :' + url);
+    //console.log('Update URL :' + url);
     return this.http.put(url, env, httpOptions).pipe(
       tap(_ => this.log(`updated env id=${env.id}`)),
       catchError(this.handleError<any>('updateEnvironment'))

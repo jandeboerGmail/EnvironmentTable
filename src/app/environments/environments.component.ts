@@ -30,9 +30,9 @@ export class EnvironmentsComponent implements OnInit {
   ngOnInit() {
     //this.displayedColumns = this.columnNames.map(x => x.id);
     //this.getEnvironments();
-    //setInterval(() => this.getEnvironments(), 1000); // 1 second
-    setInterval(() => this.getEnvironments(), 5000); // 5 seconds
-    console.log("ngOnit");
+    setInterval(() => this.getEnvironments(), 1000); // 1 second
+    //setInterval(() => this.getEnvironments(), 5000); // 5 seconds
+    //console.log("ngOnit");
   }
   
   onButtonClick(env: Environment, newStatus: string) { 
@@ -51,7 +51,6 @@ export class EnvironmentsComponent implements OnInit {
     const dialogRef = this.dialog.open(EnvironmentDetailComponent, 
       {data: this.currentEnv, height :'700px', width : '300px' } );
     dialogRef.afterClosed().subscribe(result => {
-      console.log('dialog was closed');
     });
   }
 
@@ -71,5 +70,4 @@ export class EnvironmentsComponent implements OnInit {
         this.dataSource.paginator = this.paginator;
       });
   }
-
 }

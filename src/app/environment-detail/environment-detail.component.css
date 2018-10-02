@@ -5,6 +5,7 @@
 
 .example-container>* {
 	width: 100%;
+	font-size: 8;
 }
 
 .example-form {

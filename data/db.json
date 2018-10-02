@@ -1,188 +1,172 @@
 {
   "environments": [
     {
-      "id": "test",
-      "version": "10",
+      "id": "acc",
+      "version": 1,
       "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-jun-2018",
-      "stopped-at": "01-jul-2018",
-      "status": "installed"
+      "installed-at": "2022-10-03T22:00:00.000Z",
+      "stopped-at": "2022-10-10T22:00:00.000Z",
+      "status": "stopped"
+    },
+    {
+      "id": "prod",
+      "version": 3,
+      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
+      "installed-at": "2018-10-01T22:00:00.000Z",
+      "stopped-at": "2018-10-01T22:00:00.000Z",
+      "status": "new"
     },
     {
       "id": "test",
       "version": "10",
       "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-jun-2018",
-      "stopped-at": "01-jul-2018",
+      "installed-at": "2022-10-03T22:00:00.000Z",
+      "stopped-at": "2022-10-10T22:00:00.000Z",
       "status": "install"
     },
     {
       "id": "acc",
       "version": "04",
       "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-jan-2018",
-      "stopped-at": "01-feb-2018",
+      "installed-at": "2022-10-03T22:00:00.000Z",
+      "stopped-at": "2022-10-10T22:00:00.000Z",
+      "status": "installed"
+    },
+    {
+      "id": "prod",
+      "version": "05",
+      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
+      "installed-at": "2022-10-03T22:00:00.000Z",
+      "stopped-at": "2022-10-10T22:00:00.000Z",
+      "status": "new"
+    },
+    {
+      "id": "test",
+      "version": "06",
+      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
+      "installed-at": "2022-10-03T22:00:00.000Z",
+      "stopped-at": "2022-10-10T22:00:00.000Z",
       "status": "installed"
     },
     {
       "id": "test",
       "version": "07",
       "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-jun-2018",
-      "stopped-at": "01-jul-2018",
-      "status": "new"
+      "installed-at": "2022-10-03T22:00:00.000Z",
+      "stopped-at": "2022-10-10T22:00:00.000Z",
+      "status": "install"
     },
     {
       "id": "acc",
       "version": "08",
       "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-jan-2018",
-      "stopped-at": "01-feb-2018",
-      "status": "install"
+      "installed-at": "2022-10-03T22:00:00.000Z",
+      "stopped-at": "2022-10-10T22:00:00.000Z",
+      "status": "do_install"
     },
     {
       "id": "prod",
       "version": "09",
       "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-mar-2018",
-      "stopped-at": "01-apr-2018",
-      "status": "new"
-    },
-    {
-      "id": "test",
-      "version": "10",
-      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-jun-2018",
-      "stopped-at": "01-jul-2018",
-      "status": "install"
-    },
-    {
-      "id": "test",
-      "version": "10",
-      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-jun-2018",
-      "stopped-at": "01-jul-2018",
+      "installed-at": "2022-10-03T22:00:00.000Z",
+      "stopped-at": "2022-10-10T22:00:00.000Z",
       "status": "installed"
     },
     {
       "id": "prod",
-      "version": "09",
+      "version": 3,
       "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-mar-2018",
-      "stopped-at": "01-apr-2018",
+      "installed-at": "2018-10-01T22:00:00.000Z",
+      "stopped-at": "2018-10-01T22:00:00.000Z",
       "status": "new"
     },
     {
       "id": "test",
       "version": "10",
       "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-jun-2018",
-      "stopped-at": "01-jul-2018",
+      "installed-at": "2022-10-03T22:00:00.000Z",
+      "stopped-at": "2022-10-10T22:00:00.000Z",
       "status": "install"
     },
     {
       "id": "acc",
       "version": "04",
       "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-jan-2018",
-      "stopped-at": "01-feb-2018",
+      "installed-at": "2022-10-03T22:00:00.000Z",
+      "stopped-at": "2022-10-10T22:00:00.000Z",
+      "status": "installed"
+    },
+    {
+      "id": "prod",
+      "version": "05",
+      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
+      "installed-at": "2022-10-03T22:00:00.000Z",
+      "stopped-at": "2022-10-10T22:00:00.000Z",
+      "status": "new"
+    },
+    {
+      "id": "test",
+      "version": "06",
+      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
+      "installed-at": "2022-10-03T22:00:00.000Z",
+      "stopped-at": "2022-10-10T22:00:00.000Z",
       "status": "installed"
     },
     {
       "id": "test",
       "version": "07",
       "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-jun-2018",
-      "stopped-at": "01-jul-2018",
-      "status": "new"
+      "installed-at": "2022-10-03T22:00:00.000Z",
+      "stopped-at": "2022-10-10T22:00:00.000Z",
+      "status": "install"
     },
     {
       "id": "acc",
       "version": "08",
       "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-jan-2018",
-      "stopped-at": "01-feb-2018",
-      "status": "install"
+      "installed-at": "2022-10-03T22:00:00.000Z",
+      "stopped-at": "2022-10-10T22:00:00.000Z",
+      "status": "do_install"
     },
     {
       "id": "prod",
       "version": "09",
       "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-mar-2018",
-      "stopped-at": "01-apr-2018",
-      "status": "new"
-    },
-    {
-      "id": "test",
-      "version": "10",
-      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-jun-2018",
-      "stopped-at": "01-jul-2018",
-      "status": "install"
-    },
-    {
-      "id": "test",
-      "version": "10",
-      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-jun-2018",
-      "stopped-at": "01-jul-2018",
-      "status": "installed"
-    },
-    {
-      "id": "prod",
-      "version": "09",
-      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-mar-2018",
-      "stopped-at": "01-apr-2018",
-      "status": "new"
-    },
-    {
-      "id": "test",
-      "version": "10",
-      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-jun-2018",
-      "stopped-at": "01-jul-2018",
-      "status": "install"
-    },
-    {
-      "id": "acc",
-      "version": "04",
-      "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-jan-2018",
-      "stopped-at": "01-feb-2018",
+      "installed-at": "2022-10-03T22:00:00.000Z",
+      "stopped-at": "2022-10-10T22:00:00.000Z",
       "status": "installed"
     },
     {
       "id": "test",
-      "version": "07",
+      "version": "10",
       "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-jun-2018",
-      "stopped-at": "01-jul-2018",
-      "status": "new"
+      "installed-at": "2022-10-03T22:00:00.000Z",
+      "stopped-at": "2022-10-10T22:00:00.000Z",
+      "status": "do_install"
     },
     {
       "id": "acc",
       "version": "08",
       "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-jan-2018",
-      "stopped-at": "01-feb-2018",
-      "status": "install"
+      "installed-at": "2022-10-03T22:00:00.000Z",
+      "stopped-at": "2022-10-10T22:00:00.000Z",
+      "status": "do_install"
     },
     {
       "id": "prod",
       "version": "09",
       "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-mar-2018",
-      "stopped-at": "01-apr-2018",
-      "status": "new"
+      "installed-at": "2022-10-03T22:00:00.000Z",
+      "stopped-at": "2022-10-10T22:00:00.000Z",
+      "status": "installed"
     },
     {
       "id": "test",
       "version": "10",
       "dc": "dmVyc2lvbjogIjMiCgpzZXJ2aWNlczoKICB3d3c6CiAgICBidWlsZDogLgogICAgcG9ydHM6CiAgICAgIC0gODA6ODAKICAgIAogICAg",
-      "installed-at": "01-jun-2018",
-      "stopped-at": "01-jul-2018",
-      "status": "install"
+      "installed-at": "2022-10-03T22:00:00.000Z",
+      "stopped-at": "2022-10-10T22:00:00.000Z",
+      "status": "do_install"
     }
   ]
 }

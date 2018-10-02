@@ -11,10 +11,10 @@
 	*matCellDef="let env"> {{env.version}} </mat-cell> </ng-container> <ng-container
 	matColumnDef="installed"> <mat-header-cell
 	*matHeaderCellDef mat-sort-header> Installed </mat-header-cell> <mat-cell
-	*matCellDef="let env"> {{env["installed-at"]}} </mat-cell> </ng-container> <ng-container
+	*matCellDef="let env"> {{env["installed-at"] | date :'shortDate'}}</mat-cell> </ng-container> <ng-container
 	matColumnDef="stopped"> <mat-header-cell
 	*matHeaderCellDef mat-sort-header> Stopped </mat-header-cell> <mat-cell
-	*matCellDef="let env"> {{env["stopped-at"]}} </mat-cell> </ng-container> <ng-container
+	*matCellDef="let env"> {{env["stopped-at"]| date :'shortDate'}} </mat-cell> </ng-container> <ng-container
 	matColumnDef="status"> <mat-header-cell
 	*matHeaderCellDef mat-sort-header> Status </mat-header-cell> <mat-cell
 	*matCellDef="let env"> {{env.status}} </mat-cell> </ng-container> <ng-container

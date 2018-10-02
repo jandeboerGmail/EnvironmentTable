@@ -17,26 +17,26 @@ export class EnvironmentDetailComponent implements OnInit {
 
   ngOnInit() {
     this.env = this.data;
+    //console.log(this.env);
   }
 
   base64_decode (s: string) {
-    console.log(this.env['installed-at']);
-    console.log(this.env['stopped-at']);
     try {
       return atob(s);
     } catch (e) {
       return s;
     }
   }
-
+  
   onApplyEnvironment(env : Environment) {
-    console.log("onOnApplyEnvironment:");
-    console.log(env.version)
-    this.dialogRef.close;
+    console.log("Apply : ");
+    console.log(env);
+    this.dialogRef.close();
     this.environmentService.updateEnvironment(env).subscribe();
+    this.environmentService.getEnvironments().subscribe();
   }
 
-  OnEditString(s : string) {
-    console.log("OnEditString:" + s);
+  onCancelEnvironment() {
+    this.dialogRef.close();
   }
 }
